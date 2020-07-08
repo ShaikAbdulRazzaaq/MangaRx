@@ -7,7 +7,7 @@ import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreen extends AppCompatActivity {
-    private static final int SPLASH_DELAY = 1500;
+    private static final int SPLASH_DELAY_TIME = 950;
     private final Handler mHandler = new Handler();
     private final Launcher mLauncher = new Launcher();
 
@@ -20,7 +20,7 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        mHandler.postDelayed(mLauncher, SPLASH_DELAY);
+        mHandler.postDelayed(mLauncher, SPLASH_DELAY_TIME);
     }
 
 
