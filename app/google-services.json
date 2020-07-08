@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "540858084086",
+    "firebase_url": "https://mangarx-68c33.firebaseio.com",
+    "project_id": "mangarx-68c33",
+    "storage_bucket": "mangarx-68c33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540858084086:android:d6d3a7fc273bbd60fa1ad7",
+        "android_client_info": {
+          "package_name": "com.projects.ebookapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540858084086-004rhdn09i0uppq351ho2m3728qek1so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRPtNZOJs5tBai_L0jmkVTj-IRB9XWWKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540858084086-004rhdn09i0uppq351ho2m3728qek1so.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
