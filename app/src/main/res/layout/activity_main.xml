@@ -17,10 +17,10 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationBar"
-        style="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:elevation="8dp"
+        app:elevation="16dp"
         app:labelVisibilityMode="selected"
         app:menu="@menu/bottom_navigation_bar_menu" />
 
