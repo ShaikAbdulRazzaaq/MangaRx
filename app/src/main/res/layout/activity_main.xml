@@ -17,11 +17,11 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationBar"
-        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        style="@style/Widget.MaterialComponents.BottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:elevation="16dp"
-        app:labelVisibilityMode="auto"
+        app:elevation="8dp"
+        app:labelVisibilityMode="selected"
         app:menu="@menu/bottom_navigation_bar_menu" />
 
 </LinearLayout>
