@@ -2,7 +2,6 @@
 <resources>
     <color name="colorPrimary">#6930c3</color>
     <color name="colorPrimaryDark">#45046a</color>
-    <color name="colorAccent">#64dfdf</color>
-    <color name="textColor">#370617</color>
-    <color name="defaultTextColor">#ffba08</color>
+    <color name="colorAccent">#ffba08</color>
+    <color name="DarkBrown">#370617</color>
 </resources>
