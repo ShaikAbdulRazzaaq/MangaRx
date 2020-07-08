@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:fontFamily="@font/alegreya_sans_sc"
+        android:id="@+id/tv_trending"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:text="Trending"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More..."
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:fontFamily="@font/amarante"
+        android:layout_above="@+id/rv_trending"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_trending"
+        android:layout_below="@id/tv_trending"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+</RelativeLayout>

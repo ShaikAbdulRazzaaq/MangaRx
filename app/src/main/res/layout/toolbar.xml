@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.MaterialComponents.Toolbar.Primary"
+    android:theme="@style/ThemeOverlay.MaterialComponents.Toolbar.Primary"
+    app:popupTheme="@style/ThemeOverlay.MaterialComponents.Toolbar.Primary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/amarante"
+        android:gravity="center_horizontal"
+        android:text="@string/mangarx"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+</com.google.android.material.appbar.MaterialToolbar>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="8dp"
+        app:cardMaxElevation="15dp">
+
+        <ImageView
+            android:id="@+id/iv_imageOfManga"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/mangatitle"
+            android:maxWidth="170dp"
+            android:maxHeight="230dp"
+            android:minWidth="180dp"
+            android:minHeight="130dp" />
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_titleOfManga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_alternates"
+            android:gravity="center"
+            android:text="One Punch Man Fan Made Colored"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_titleOfManga"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/tv_ratingBarValue"
+            android:text="4.7"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_titleOfManga"
+            android:layout_toEndOf="@id/ratingBar"
+            android:fontFamily="@font/ubuntu" />
+
+        <LinearLayout
+            android:id="@+id/latestChapterLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_LatestChapter"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cornerRadius="16dp"
+                android:text="Chapter 220"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/tv_latestChapterInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="1 hr ago..."
+                android:fontFamily="@font/montserrat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/previousChapterLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/latestChapterLayout"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cornerRadius="16dp"
+                android:text="Chapter 119"
+                android:fontFamily="@font/montserrat_alternates"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/previousChapterInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="2 days ago..."
+                android:fontFamily="@font/montserrat" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+

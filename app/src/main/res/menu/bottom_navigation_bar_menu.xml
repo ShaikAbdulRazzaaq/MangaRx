@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/categories"
+        android:enabled="true"
+        android:icon="@drawable/ic_spider_web"
+        android:title="@string/categories" />
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_homepage"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/favorites"
+        android:enabled="true"
+        android:icon="@drawable/ic_star"
+        android:title="@string/favorites" />
+</menu>
