@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 }
             }
-            return false;
+            return true;
         });
         bottomNavigationView.setOnNavigationItemReselectedListener(item -> {
             switch (item.getItemId()) {
