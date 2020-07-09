@@ -31,18 +31,18 @@ public class LoginActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         loginPassword = findViewById(R.id.loginPassword);
         name = findViewById(R.id.et_yourName);
+        login = findViewById(R.id.btn_login);
+        signup = findViewById(R.id.btn_signUp);
         login.setOnClickListener(v -> validateCredentials(name.getText().toString(), loginPassword.getText().toString()));
         signup.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this, SignUpActivity.class)));
     }
 
     private void validateCredentials(String username, String password) {
         if (TextUtils.isEmpty(username) || TextUtils.isEmpty(password)) {
-            if (TextUtils.isEmpty(username)) {
+            if (TextUtils.isEmpty(username))
                 name.setError(getString(R.string.required_field));
-            }
-            if (TextUtils.isEmpty(password)) {
+            if (TextUtils.isEmpty(password))
                 loginPassword.setError(getString(R.string.required_field));
-            }
         } else {
             firebaseAuth.signInWithEmailAndPassword(username, password).addOnCompleteListener(task -> {
                 if (task.isSuccessful()) {
