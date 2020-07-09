@@ -13,4 +13,7 @@
     <string name="welcome">Welcome</string>
     <string name="how_can_i_call_you">How Can I call You?</string>
     <string name="password">Password</string>
+    <string name="signup">SignUp</string>
+    <string name="login">Login</string>
+    <string name="your_name">Your Name</string>
 </resources>

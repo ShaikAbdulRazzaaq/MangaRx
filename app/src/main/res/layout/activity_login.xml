@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient">
+
     <TextView
         android:id="@+id/welcomeTitle"
         android:layout_width="wrap_content"
@@ -43,7 +44,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat"
-                    android:hint="Your Name"
+                    android:hint="@string/your_name"
                     android:inputType="textPersonName" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,21 +64,21 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_margin="8dp"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
 
                 <com.google.android.material.button.MaterialButton
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
                     android:fontFamily="@font/comfortaa"
                     android:gravity="center"
-                    android:text="Login"
-                    android:layout_weight="1"
+                    android:text="@string/login"
                     app:cornerRadius="16dp"
                     app:elevation="16dp"
-                    android:layout_marginEnd="5dp"
                     app:icon="@drawable/ic_baseline_keyboard_arrow_right_24"
                     app:iconGravity="end" />
 
@@ -86,11 +87,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/comfortaa"
                     android:gravity="center"
-                    android:text="SignUp"
-                    android:layout_marginStart="5dp"
+                    android:text="@string/signup"
                     app:cornerRadius="16dp"
                     app:elevation="16dp"
                     app:icon="@drawable/ic_baseline_keyboard_arrow_right_24"
