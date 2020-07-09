@@ -11,10 +11,9 @@
     <string name="trending">Trending</string>
     <string name="to_the_world_of_manga">To the world of Manga</string>
     <string name="welcome">Welcome</string>
-    <string name="how_can_i_call_you">How Can I call You?</string>
     <string name="password">Password</string>
     <string name="signup">SignUp</string>
     <string name="login">Login</string>
-    <string name="your_name">Your Name</string>
     <string name="required_field">Required Field</string>
+    <string name="your_email">Your Email</string>
 </resources>
