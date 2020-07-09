@@ -51,6 +51,7 @@
                 android:layout_marginBottom="5dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_howCanICallYou"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat"
@@ -64,6 +65,7 @@
                 android:layout_marginTop="5dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat"
@@ -71,6 +73,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_signUpToLogin"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

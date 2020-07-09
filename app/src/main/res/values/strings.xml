@@ -16,4 +16,5 @@
     <string name="signup">SignUp</string>
     <string name="login">Login</string>
     <string name="your_name">Your Name</string>
+    <string name="required_field">Required Field</string>
 </resources>
