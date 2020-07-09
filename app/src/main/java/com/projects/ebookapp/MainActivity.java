@@ -8,6 +8,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.projects.ebookapp.fragments.CategoriesFragment;
+import com.projects.ebookapp.fragments.FavoriteFragment;
+import com.projects.ebookapp.fragments.HomePageFragment;
 
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
@@ -22,42 +25,43 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.getMenu().findItem(R.id.home).setChecked(true);
         loadFragment(new HomePageFragment());
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
-            Fragment fragment = null;
+            Fragment fragment;
             switch (item.getItemId()) {
-                case R.id.categories: {
-                    fragment = new CategoriesFragment();
-                    Log.d(TAG, "onCreate: Categories");
+                case R.id.categories:
+                    fragment = getCategoriesFragment();
                     break;
-                }
-                case R.id.favorites: {
-                    fragment = new FavoriteFragment();
-                    Log.d(TAG, "onCreate: Favorites");
+                case R.id.favorites:
+                    fragment = getFavoriteFragment();
                     break;
-                }
-                case R.id.home: {
-                    fragment = new HomePageFragment();
-                    Log.d(TAG, "onCreate: Home");
+                case R.id.home:
+                    fragment = getHomeFragment();
                     break;
-                }
+                default:
+                    return false;
             }
             return loadFragment(fragment);
         });
-      /*  bottomNavigationView.setOnNavigationItemReselectedListener(item -> {
-            switch (item.getItemId()) {
-                case R.id.categories: {
-                    Log.d(TAG, "onCreate: On Reselect Categories");
-                    break;
-                }
-                case R.id.favorites: {
-                    Log.d(TAG, "onCreate: On Reselect Favorites");
-                    break;
-                }
-                case R.id.home: {
-                    Log.d(TAG, "onCreate: On Reselect Home");
-                    break;
-                }
-            }
-        });*/
+    }
+
+    private Fragment getCategoriesFragment() {
+        Fragment fragment;
+        fragment = new CategoriesFragment();
+        Log.d(TAG, "onCreate: Categories");
+        return fragment;
+    }
+
+    private Fragment getFavoriteFragment() {
+        Fragment fragment;
+        fragment = new FavoriteFragment();
+        Log.d(TAG, "onCreate: Favorites");
+        return fragment;
+    }
+
+    private Fragment getHomeFragment() {
+        Fragment fragment;
+        fragment = new HomePageFragment();
+        Log.d(TAG, "onCreate: Home");
+        return fragment;
     }
 
     boolean loadFragment(Fragment fragment) {

@@ -1,10 +1,11 @@
 package com.projects.ebookapp;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.projects.ebookapp.login.LoginActivity;
 
 public class SplashScreen extends AppCompatActivity {
     private static final int SPLASH_DELAY_TIME = 950;
@@ -12,17 +13,10 @@ public class SplashScreen extends AppCompatActivity {
     private final Launcher mLauncher = new Launcher();
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
-
-    @Override
     protected void onStart() {
         super.onStart();
         mHandler.postDelayed(mLauncher, SPLASH_DELAY_TIME);
     }
-
 
     @Override
     protected void onStop() {
@@ -30,17 +24,17 @@ public class SplashScreen extends AppCompatActivity {
         super.onStop();
     }
 
-    private void launch() {
-        if (!isFinishing()) {
-            startActivity(new Intent(SplashScreen.this, MainActivity.class));
-            finish();
-        }
-    }
-
     private class Launcher implements Runnable {
         @Override
         public void run() {
             launch();
+        }
+
+        private void launch() {
+            if (!isFinishing()) {
+                startActivity(new Intent(SplashScreen.this, LoginActivity.class));
+                finish();
+            }
         }
     }
 }
