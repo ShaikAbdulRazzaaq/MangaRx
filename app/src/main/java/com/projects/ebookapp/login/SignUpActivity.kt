@@ -53,7 +53,7 @@ class SignUpActivity : AppCompatActivity() {
                     finish()
                 } else {
                     progressBar!!.visibility = View.INVISIBLE
-                    Snackbar.make(coordinatorLayout!!, ""+task.exception?.message, BaseTransientBottomBar.LENGTH_LONG).show()
+                    Snackbar.make(coordinatorLayout!!, "" + task.exception?.message, BaseTransientBottomBar.LENGTH_LONG).show()
                     Log.e(TAG, "validateCredentials: ", task.exception)
                 }
             }
