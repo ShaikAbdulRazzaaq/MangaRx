@@ -12,7 +12,6 @@ import com.projects.ebookapp.fragments.HomePageFragment
 
 class MainActivity : AppCompatActivity() {
     private var bottomNavigationView: BottomNavigationView? = null
-    private var fragmentManager = supportFragmentManager
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,6 +28,7 @@ class MainActivity : AppCompatActivity() {
             }
             loadFragment(fragment)
         })
+
     }
 
     private val categoriesFragment: Fragment
@@ -53,9 +53,10 @@ class MainActivity : AppCompatActivity() {
             Log.d(TAG, "onCreate: Home")
             return fragment
         }
+
     private fun loadFragment(fragment: Fragment?): Boolean {
         if (fragment != null) {
-            fragmentManager.beginTransaction().replace(R.id.fragmentHolder, fragment).commit()
+            supportFragmentManager.beginTransaction().replace(R.id.fragmentHolder, fragment).commit()
             return true
         }
         return false
