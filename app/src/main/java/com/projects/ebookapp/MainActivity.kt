@@ -19,7 +19,8 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView = findViewById(R.id.bottomNavigationBar)
         bottomNavigationView?.menu?.findItem(R.id.home)?.isChecked = true
         loadFragment(HomePageFragment())
-        bottomNavigationView?.setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener setOnNavigationItemSelectedListener@{ item: MenuItem ->
+        bottomNavigationView?.setOnNavigationItemSelectedListener(BottomNavigationView.OnNavigationItemSelectedListener
+        setOnNavigationItemSelectedListener@{ item: MenuItem ->
             val fragment: Fragment = when (item.itemId) {
                 R.id.categories -> categoriesFragment
                 R.id.favorites -> favoriteFragment
@@ -45,7 +46,6 @@ class MainActivity : AppCompatActivity() {
             Log.d(TAG, "onCreate: Favorites")
             return fragment
         }
-
     private val homeFragment: Fragment
         get() {
             val fragment: Fragment
@@ -53,7 +53,6 @@ class MainActivity : AppCompatActivity() {
             Log.d(TAG, "onCreate: Home")
             return fragment
         }
-
     private fun loadFragment(fragment: Fragment?): Boolean {
         if (fragment != null) {
             fragmentManager.beginTransaction().replace(R.id.fragmentHolder, fragment).commit()
