@@ -6,8 +6,7 @@
 
     <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/gradient">
+        android:layout_height="match_parent">
 
         <ProgressBar
             android:id="@+id/signUpProgress"
@@ -16,29 +15,10 @@
             android:layout_centerInParent="true"
             android:visibility="invisible" />
 
-        <TextView
-            android:id="@+id/welcomeTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/subtitleForMainTitle"
-            android:fontFamily="cursive"
-            android:paddingStart="25dp"
-            android:paddingEnd="20dp"
-            android:text="@string/welcome"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
-            android:textColor="@color/White" />
-
-        <TextView
-            android:id="@+id/subtitleForMainTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/loginLayout"
-            android:fontFamily="@font/amita"
-            android:paddingStart="25dp"
-            android:paddingEnd="20dp"
-            android:text="@string/to_the_world_of_manga"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-            android:textColor="@color/White" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/ic_undraw_mobile_login_ikmv" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/loginLayout"
@@ -47,7 +27,8 @@
             android:layout_centerInParent="true"
             android:layout_margin="20dp"
             app:cardCornerRadius="16dp"
-            app:cardUseCompatPadding="true"
+            app:cardElevation="15dp"
+            app:cardMaxElevation="30dp"
             app:contentPadding="24dp">
 
             <LinearLayout
@@ -66,7 +47,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserrat"
-                        android:hint="Email Address"
+                        android:hint="@string/email_address"
+                        android:drawableStart="@drawable/ic_baseline_email_24"
+                        android:drawablePadding="8dp"
                         android:inputType="textEmailAddress" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,7 +63,10 @@
                         android:id="@+id/et_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:drawablePadding="8dp"
                         android:fontFamily="@font/montserrat"
+                        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
                         android:hint="@string/password" />
                 </com.google.android.material.textfield.TextInputLayout>
 
