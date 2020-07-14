@@ -6,7 +6,6 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.projects.ebookapp.R.animator
 import com.projects.ebookapp.fragments.CategoriesFragment
 import com.projects.ebookapp.fragments.FavoriteFragment
 import com.projects.ebookapp.fragments.HomePageFragment
@@ -57,12 +56,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun loadFragment(fragment: Fragment?): Boolean {
         if (fragment != null) {
-            supportFragmentManager.beginTransaction().replace(R.id.fragmentHolder, fragment)
-                    .setCustomAnimations(
-                            animator.card_flip_right_in,
-                            animator.card_flip_right_out,
-                            animator.card_flip_left_in,
-                            animator.card_flip_left_out).commit()
+            supportFragmentManager.beginTransaction().replace(R.id.fragmentHolder, fragment).commit()
             return true
         }
         return false
