@@ -72,13 +72,11 @@
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_signUpToLogin"
-                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                    android:layout_width="wrap_content"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/comfortaa"
-                    android:gravity="center"
                     android:text="@string/signup"
                     app:cornerRadius="16dp"
                     app:elevation="16dp"
