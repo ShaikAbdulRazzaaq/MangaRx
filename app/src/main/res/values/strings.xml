@@ -20,4 +20,8 @@
     <string name="loginillustration">LoginIllustration</string>
     <string name="signupillusttation">SignUpIllusttation</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="or">Or</string>
+    <string name="facebook_app_id">2771610166406055</string>
+    <string name="fb_login_protocol_scheme">fb2771610166406055</string>
 </resources>
