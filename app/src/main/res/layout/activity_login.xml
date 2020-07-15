@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/coordinatorLoginPage"
     android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
     android:layout_height="match_parent">
 
     <RelativeLayout
@@ -11,8 +12,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:layout_margin="8dp"
+            android:layout_height="240dp"
             android:src="@drawable/ic_undraw_unlock_24mb"
             android:contentDescription="@string/loginillustration" />
 
