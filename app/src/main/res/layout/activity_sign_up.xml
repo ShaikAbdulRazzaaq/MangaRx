@@ -17,8 +17,9 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:src="@drawable/ic_undraw_mobile_login_ikmv" />
+            android:layout_height="230dp"
+            android:contentDescription="@string/signupillusttation"
+            android:src="@drawable/ic_undraw_sign_in_e6hj" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/loginLayout"
@@ -28,8 +29,8 @@
             android:layout_margin="20dp"
             app:cardCornerRadius="16dp"
             app:cardElevation="15dp"
-            app:cardMaxElevation="30dp"
-            app:contentPadding="24dp">
+            app:cardMaxElevation="25dp"
+            app:contentPadding="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -46,10 +47,10 @@
                         android:id="@+id/et_howCanICallYou"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/montserrat"
-                        android:hint="@string/email_address"
                         android:drawableStart="@drawable/ic_baseline_email_24"
                         android:drawablePadding="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="@string/email_address"
                         android:inputType="textEmailAddress" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,11 +64,11 @@
                         android:id="@+id/et_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPassword"
+                        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
                         android:drawablePadding="8dp"
                         android:fontFamily="@font/montserrat"
-                        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
-                        android:hint="@string/password" />
+                        android:hint="@string/password"
+                        android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.button.MaterialButton
@@ -79,11 +80,11 @@
                     android:fontFamily="@font/comfortaa"
                     android:text="@string/signup"
                     app:cornerRadius="16dp"
-                    app:strokeColor="@color/DarkBrown"
-                    app:strokeWidth="1dp"
                     app:elevation="16dp"
                     app:icon="@drawable/ic_baseline_keyboard_arrow_right_24"
-                    app:iconGravity="textEnd" />
+                    app:iconGravity="textEnd"
+                    app:strokeColor="@color/DarkBrown"
+                    app:strokeWidth="1dp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </RelativeLayout>
