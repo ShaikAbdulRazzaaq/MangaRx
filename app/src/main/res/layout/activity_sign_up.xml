@@ -17,7 +17,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="230dp"
+            android:layout_height="240dp"
             android:contentDescription="@string/signupillusttation"
             android:src="@drawable/ic_undraw_sign_in_e6hj" />
 
